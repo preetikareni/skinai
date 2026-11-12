@@ -1,0 +1,182 @@
+{
+  "acne": {
+    "icon": "🧴",
+    "description": "Acne is a skin condition that occurs when hair follicles become clogged with oil and dead skin cells.",
+    "severity": "moderate",
+    "skincare": [
+      "Use a salicylic acid (2%) face wash twice daily",
+      "Apply benzoyl peroxide spot treatment at night",
+      "Use a non-comedogenic oil-free moisturizer",
+      "Apply niacinamide serum to reduce inflammation",
+      "Always use SPF 30+ sunscreen daily",
+      "Never pop or squeeze pimples"
+    ],
+    "food": [
+      "Eat more fruits and vegetables (antioxidants)",
+      "Drink 8-10 glasses of water daily",
+      "Reduce dairy and high-glycemic foods",
+      "Include omega-3 rich foods (fish, walnuts, flaxseed)",
+      "Avoid sugary drinks and processed foods",
+      "Add zinc-rich foods (pumpkin seeds, chickpeas)"
+    ],
+    "tips": [
+      "Change pillowcases every 2-3 days",
+      "Avoid touching your face throughout the day",
+      "Clean phone screen with antibacterial wipe daily",
+      "Use clean makeup brushes and tools",
+      "Remove makeup thoroughly before sleeping",
+      "Manage stress with yoga or meditation",
+      "If it gets worse or doesn't improve in 4-6 weeks, see a dermatologist"
+    ],
+    "products": [
+      "CeraVe Foaming Facial Cleanser",
+      "Paula's Choice BHA Exfoliant",
+      "La Roche-Posay Effaclar Duo",
+      "Neutrogena Oil-Free Moisturizer with SPF"
+    ]
+  },
+  "darkcircles": {
+    "icon": "👁️",
+    "description": "Dark circles under the eyes are common and can be caused by fatigue, genetics, aging, or dehydration.",
+    "severity": "mild",
+    "skincare": [
+      "Apply a caffeine-based eye cream morning and night",
+      "Use vitamin K and retinol eye cream at night",
+      "Apply cold cucumber slices or tea bags for 10 minutes",
+      "Gently massage the under-eye area with aloe vera gel",
+      "Use a brightening vitamin C serum around eyes",
+      "Apply sunscreen around the eye area"
+    ],
+    "food": [
+      "Eat almonds, walnuts and vitamin E rich foods",
+      "Include iron-rich foods (spinach, lentils, red meat)",
+      "Drink plenty of water to reduce puffiness",
+      "Eat vitamin C rich citrus fruits",
+      "Reduce sodium intake to decrease water retention",
+      "Add collagen-boosting foods (bone broth, berries)"
+    ],
+    "tips": [
+      "Sleep 7-9 hours every night consistently",
+      "Elevate your head with an extra pillow",
+      "Limit alcohol and caffeine consumption",
+      "Wear UV-protective sunglasses outdoors",
+      "Use cool compresses to reduce puffiness",
+      "Try facial yoga and lymphatic drainage massage",
+      "If it gets worse or doesn't improve in 4-6 weeks, see a dermatologist"
+    ],
+    "products": [
+      "The Ordinary Caffeine Solution 5%",
+      "CeraVe Eye Repair Cream",
+      "Kiehl's Creamy Eye Treatment with Avocado",
+      "Neutrogena Rapid Wrinkle Repair Eye Cream"
+    ]
+  },
+  "dry": {
+    "icon": "💧",
+    "description": "Dry skin lacks moisture and natural oils, leading to flakiness, itching, and a dull complexion.",
+    "severity": "mild",
+    "skincare": [
+      "Use a gentle hydrating cleanser (no SLS/SLES)",
+      "Apply hyaluronic acid serum on damp skin",
+      "Use a thick ceramide-based moisturizer twice daily",
+      "Apply facial oil (rosehip, jojoba) as the last step",
+      "Use a sleeping mask 2-3 times per week",
+      "Exfoliate gently with lactic acid 1x per week"
+    ],
+    "food": [
+      "Eat avocados for healthy skin fats",
+      "Include fatty fish (salmon, mackerel) for omega-3",
+      "Drink at least 2 liters of water daily",
+      "Eat sweet potatoes rich in beta-carotene",
+      "Add nuts and seeds for vitamin E",
+      "Include olive oil in your diet"
+    ],
+    "tips": [
+      "Use a humidifier in your bedroom while sleeping",
+      "Take shorter, lukewarm (not hot) showers",
+      "Pat skin dry gently - never rub",
+      "Apply moisturizer within 3 minutes of washing",
+      "Wear gloves in cold or dry weather",
+      "Avoid alcohol-based and fragrance-heavy products",
+      "If it gets worse or doesn't improve in 4-6 weeks, see a dermatologist"
+    ],
+    "products": [
+      "CeraVe Moisturizing Cream",
+      "The Ordinary Hyaluronic Acid 2% + B5",
+      "First Aid Beauty Ultra Repair Cream",
+      "Neutrogena Hydro Boost Gel-Cream"
+    ]
+  },
+  "oily": {
+    "icon": "✨",
+    "description": "Oily skin produces excess sebum, leading to a shiny appearance and increased risk of clogged pores.",
+    "severity": "mild",
+    "skincare": [
+      "Use a gentle gel or foam cleanser twice daily",
+      "Apply an alcohol-free toner with witch hazel",
+      "Use a lightweight oil-free gel moisturizer",
+      "Apply niacinamide serum to control oil production",
+      "Use clay or salicylic acid masks 1-2 times per week",
+      "Always use oil-free, non-comedogenic SPF"
+    ],
+    "food": [
+      "Avoid fried and greasy fast foods",
+      "Reduce refined carbohydrates and sugar",
+      "Drink 8+ glasses of water daily",
+      "Eat green leafy vegetables for antioxidants",
+      "Include zinc-rich foods to regulate sebum",
+      "Reduce dairy consumption if acne-prone"
+    ],
+    "tips": [
+      "Use blotting papers throughout the day",
+      "Wash your face no more than twice daily",
+      "Avoid over-moisturizing or skipping moisturizer",
+      "Use oil-free, water-based makeup products",
+      "Clean makeup brushes regularly",
+      "Do not skip sunscreen - use oil-free formulas",
+      "If it gets worse or doesn't improve in 4-6 weeks, see a dermatologist"
+    ],
+    "products": [
+      "La Roche-Posay Effaclar Purifying Foaming Gel",
+      "Paula's Choice Skin Balancing Toner",
+      "Neutrogena Hydro Boost Water Gel",
+      "Innisfree No Sebum Powder Sunscreen"
+    ]
+  },
+  "normal": {
+    "icon": "🌿",
+    "description": "Normal skin is well balanced: not too oily, not too dry, with few visible concerns.",
+    "severity": "none",
+    "skincare": [
+      "Use a gentle cleanser twice daily",
+      "Apply a light moisturizer morning and night",
+      "Use SPF 30+ sunscreen every day",
+      "Add a vitamin C serum in the morning for glow",
+      "Exfoliate gently 1-2 times per week",
+      "Remove makeup before sleeping"
+    ],
+    "food": [
+      "Eat a balanced diet with fruits and vegetables",
+      "Drink 8 glasses of water daily",
+      "Include omega-3 foods (fish, walnuts, flaxseed)",
+      "Add vitamin C rich foods (citrus, berries)",
+      "Limit sugary and processed foods",
+      "Eat nuts and seeds for vitamin E"
+    ],
+    "tips": [
+      "Sleep 7-8 hours every night",
+      "Avoid touching your face",
+      "Change pillowcases weekly",
+      "Do not over-wash or over-exfoliate",
+      "Manage stress with exercise or meditation",
+      "Keep your routine simple and consistent",
+      "If you notice new concerns that persist for 4-6 weeks, see a dermatologist"
+    ],
+    "products": [
+      "CeraVe Hydrating Facial Cleanser",
+      "Neutrogena Hydro Boost Gel-Cream",
+      "CeraVe AM Facial Moisturizing Lotion SPF 30",
+      "The Ordinary Hyaluronic Acid 2% + B5"
+    ]
+  }
+}
