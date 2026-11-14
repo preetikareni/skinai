@@ -9,12 +9,15 @@ from chat import chat_bp
 
 # Try to import tensorflow - if not available give a helpful error
 try:
-    import tensorflow as tf
-    from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
+    from tflite_runtime.interpreter import Interpreter
     MODEL_LOADED = True
 except ImportError:
-    MODEL_LOADED = False
-    print("⚠️  TensorFlow not found. Install with: pip install tensorflow")
+    try:
+        from tensorflow.lite.python.interpreter import Interpreter
+        MODEL_LOADED = True
+    except ImportError:
+        MODEL_LOADED = False
+        print("⚠️  No TFLite interpreter found.")
 
 # Try to import PIL
 try:
@@ -30,7 +33,7 @@ app.register_blueprint(chat_bp)
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
 BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH      = os.path.join(BASE_DIR, "model", "skin_model.h5")
+MODEL_PATH = os.path.join(BASE_DIR, "model", "skin_model.tflite")
 CLASS_MAP_PATH  = os.path.join(BASE_DIR, "model", "class_indices.json")
 RECO_PATH       = os.path.join(BASE_DIR, "recommendations.json")
 
@@ -74,7 +77,8 @@ def load_assets():
     # Load model
     if MODEL_LOADED and os.path.exists(MODEL_PATH):
         try:
-            model = tf.keras.models.load_model(MODEL_PATH)
+            model = Interpreter(model_path=MODEL_PATH)
+            model.allocate_tensors()
             print(f"✅ Model loaded from: {MODEL_PATH}")
         except Exception as e:
             print(f"❌ Failed to load model: {e}")
@@ -109,10 +113,12 @@ def predict_skin(image_bytes):
         img_array = np.expand_dims(img_array, axis=0)  # (1, 224, 224, 3)
 
         # Same preprocessing as train.py (scales pixels to -1..1)
-        img_array = preprocess_input(img_array)
-
-        # Predict
-        predictions = model.predict(img_array, verbose=0)[0]
+        img_array = img_array / 127.5 - 1.0
+        inp = model.get_input_details()[0]
+        out = model.get_output_details()[0]
+        model.set_tensor(inp["index"], img_array.astype(np.float32))
+        model.invoke()
+        predictions = model.get_tensor(out["index"])[0]
         class_idx = int(np.argmax(predictions))
         confidence = float(predictions[class_idx])
         label = class_map.get(str(class_idx), f"class_{class_idx}")
