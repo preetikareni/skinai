@@ -2,11 +2,9 @@
 flask>=2.3.0
 Pillow>=9.0.0
 werkzeug>=2.3.0
-opencv-python>=4.7.0
 google-genai
 python-dotenv
 gunicorn
-tensorflow==2.10.0
-keras==2.10.0
-numpy==1.23.5
-protobuf==3.19.6
+tflite-runtime==2.14.0
+numpy==1.26.4
+
